@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: ivory;
+      color: #333;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .center-heading {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    /* Rectangular main image */
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      margin: 0 auto 30px;
+      border-radius: 8px;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+    .product p {
+      font-size: 14px;
+    }
+    .extra-info {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+   
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #d4af37;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.read-more:hover {
+  background-color: #b08a2e;
+}
+.order-now {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color:#3a5a40;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.order-now:hover {
+  background-color: #2e4632;
+}
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #eee;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        width: 100%;
+        text-align: center;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+      .main-image {
+        max-height: 200px;
+      }
+    }
+  </style>
+  <script>
+    function toggleReadMore(id) {
+  const info = document.getElementById(id);
+  if (info.style.display === 'block') {
+    info.style.display = 'none';
+  } else {
+    info.style.display = 'block';
+  }
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png.png" alt="AKHMA Logo" />
+      <h1></h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+  <section id="home" class
+="section">
+    <div class="center-heading">Welcome to AKHMA ORGANICS </div>
+<h3>Our products are:</h3>
+  <ul>
+    <li>🌱 100% Natural & Organic</li>
+    <li>🚫 Free from Parabens, Sulfates & Synthetic Fragrances</li>
+    <li>👐 Handmade in Small Batches</li>
+  </ul>
+<p>From nourishing lip balms to gentle scrubs, every creation is made with plant-based ingredients to care for your skin naturally.</p>
+
+    <img class="main-image" src="main-image-1.jpeg.jpeg" alt="Naturally crafted with modern science" />
+<div class="center-heading"> ✨Nature’s goodness,bottled for you.</div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="center-heading">About Us</div>
+    <p style="text-align: center;">
+      At AKHMA, we are committed to creating high-quality, eco-friendly, and skin-safe products that help people feel confident and beautiful.
+      Our mission is rooted in sustainability and innovation, providing natural beauty solutions you can trust.At AKHMA, we believe skincare should be simple, pure, and effective. Our founder, Akhila Hariharan, brings her expertise as a chemical engineer to create products that combine nature’s healing power with scientific precision – without the harmful additives found in commercial cosmetics.
+
+Our journey began with a commitment:
+
+To bring back the goodness of nature into everyday beauty rituals
+
+Every product is lovingly made by hand, using high-quality organic ingredients sourced responsibly. We avoid harsh chemicals, opting for skin-safe, eco-friendly formulations that deliver results you can feel and trust.
+
+Because your skin deserves nothing less than pure love from nature.
+    </p>
+  </section>
+
+  <section id="products" class="section">
+    <div class="center-heading">Best Selling Products</div>
+    <div class="products">
+      <div class="product">
+        <img src="product1.jpeg.jpeg" alt="Beetroot Lip Balm – Natural Tint & Deep Hydration" />
+        <h3>Beetroot Lip Balm – Natural Tint & Deep Hydration</h3>
+        <p>Give your lips a soft rosy glow with our Beetroot Lip Balm. Made with beetroot extract, rich plant butters, and natural oils, it deeply hydrates, repairs chapped lips, and leaves a subtle tint – perfect for an everyday fresh look.</p>
+        <span class="read-more" onclick="toggleReadMore('info1')">Read More</span>
+        <div class="extra-info" id="info1">
+<h3>Benefits:</h3>
+  <ul>
+    <li>Natural antioxidant protection</li>
+    <li>Revitalizes with botanical extracts</li>
+    <li>Rich in essential vitamins</li>
+  </ul>
+ <p><strong>Ingredients:</strong> Beetroot extract, Natural wax, Natural oils and butter </p>
+          <p><strong>Price:</strong> AED 19.99</p>
+          <p><strong>Available Sizes:</strong> 3g, 5g</p>
+        </div>
+<a href="https://wa.me/971508395503?text=I%20want%20to%20order%20Hydrating%20Face%20Serum" 
+   target="_blank" class="order-now">
+  🛒 Order Now
+</a>
+      </div>
+
+      <div class="product">
+        <img src="product2.jpeg.jpeg" alt="Orange Lip Balm – Refreshing Citrus Care" />
+        <h3>Orange Lip Balm – Refreshing Citrus Care</h3>
+        <p>Awaken your senses with our Orange Lip Balm. Infused with orange essential oil and vitamin-rich natural ingredients, this balm nourishes, heals, and refreshes your lips with a burst of citrus.</p>
+        <span class="read-more" onclick="toggleReadMore('info2')">Read More</span>
+        <div class="extra-info" id="info2">
+<h3>Benefits:</h3>
+  <ul>
+    <li>Hydrating and soothing formula</li>
+    <li>Vitamin C boost for healthy lips</li>
+    <li>Rich in essential vitamins</li>
+  </ul>
+ <p><strong>Ingredients:</strong> Orange extract, Natural wax, Natural oils and butter </p>
+          <p><strong>Price:</strong> AED 19.99</p>
+          <p><strong>Available Sizes:</strong> 3g, 5g</p>
+        </div>
+<a href="https://wa.me/971508395503?text=I%20want%20to%20order%20Hydrating%20Face%20Serum" 
+   target="_blank" class="order-now">
+  🛒 Order Now
+</a>
+      </div>
+
+      <div class="product">
+        <img src="product3.jpeg.jpeg" alt="Lip Scrub – Smooth & Revive" />
+        <h3>Lip Scrub – Smooth & Revive</h3>
+        <p>Our gentle Lip Scrub exfoliates away dryness with natural sugar crystals, leaving your lips soft, smooth, and perfectly prepped for balm or lipstick.</p>
+        <span class="read-more" onclick="toggleReadMore('info3')">Read More</span>
+        <div class="extra-info" id="info3">
+<h3>Benefits:</h3>
+  <ul>
+    <li>Removes dead skin cells</li>
+    <li>Improves lip texture instantly</li>
+    <li>Enhances balm absorption</li>
+  </ul>
+          <p><strong>Price:</strong> AED 24.99</p>
+          <p><strong>Available Sizes:</strong> 15g</p>
+        </div>
+<a href="https://wa.me/971508395503?text=I%20want%20to%20order%20Hydrating%20Face%20Serum" 
+   target="_blank" class="order-now">
+  🛒 Order Now
+</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="center-heading">Contact Us</div>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://wa.me/+971508395503" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 16px;">
+        📞 Chat with us on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+  <div style="margin-bottom: 10px;">
+    📧 Email: <a href="mailto:akhmaorganics@gmail.com">akhmaorganics@gmail.com</a><br>
+    📱 Call / WhatsApp: 
+    <a href="https://wa.me/971508395503" target="_blank">+971 50 839 5503</a> | 
+    <a href="https://wa.me/919489703199" target="_blank">+91 94897 03199</a><br>
+    📍 Location: Sharjah, United Arab Emirates
+  </div>
+  &copy; 2025 AKHMA. All rights reserved.
+</footer>
+
+
+</body>
+</html>
+

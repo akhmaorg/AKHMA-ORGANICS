@@ -26,7 +26,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
     }
     header img {
       height: 50px;
@@ -127,6 +126,21 @@
   text-align: center;
   text-decoration: none;
 }
+.shop-now-btn {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 12px 25px;
+  background-color: #d4af37; /* your logo's gold color */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.shop-now-btn:hover {
+  background-color: #b08a2e;
+}
 .order-now:hover {
   background-color: #2e4632;
 }
@@ -160,26 +174,46 @@
       background-color: #eee;
       margin-top: 40px;
     }
-    @media (max-width: 600px) {
-      nav {
-        width: 100%;
-        text-align: center;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      header h1 {
-        font-size: 22px;
-      }
-      .main-image {
-        max-height: 200px;
-      }
-    }
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+footer .social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px; /* reduced padding */
+  }
+  header img {
+    height: 40px; /* smaller logo */
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  .main-image {
+    max-height: 200px;
+  }
+}
+
   </style>
   <script>
     function toggleReadMore(id) {
@@ -216,9 +250,10 @@
     <li>👐 Handmade in Small Batches</li>
   </ul>
 <p>From nourishing lip balms to gentle scrubs, every creation is made with plant-based ingredients to care for your skin naturally.</p>
+<img class="main-image" src="main-image-1.jpeg.jpeg" alt="Naturally crafted with modern science" />
+<a href="#products" class="shop-now-btn">Shop Now</a>
+<div class="center-heading"> ✨Nature’s goodness, bottled for you.</div>
 
-    <img class="main-image" src="main-image-1.jpeg.jpeg" alt="Naturally crafted with modern science" />
-<div class="center-heading"> ✨Nature’s goodness,bottled for you.</div>
   </section>
 
   <section id="about" class="section">
@@ -330,9 +365,21 @@ Because your skin deserves nothing less than pure love from nature.
     <a href="https://wa.me/919489703199" target="_blank">+91 94897 03199</a><br>
     📍 Location: Sharjah, United Arab Emirates
   </div>
-  &copy; 2025 AKHMA. All rights reserved.
-</footer>
 
+&copy; 2025 AKHMA. All rights reserved.
+
+<div class="social-icons">
+  <a href="https://www.instagram.com/direct/t/340282366841710300949128131080465149781" target="_blank">
+    <img src="instagram-icon.jpeg" alt="Instagram">
+  </a>
+  <a href="https://www.facebook.com/messages/t/YOUR_FACEBOOK_PAGE_ID" target="_blank">
+    <img src="facebook-icon.jpeg" alt="Facebook">
+  </a>
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
+    <img src="linkedin-icon.jpeg" alt="LinkedIn">
+  </a>
+</div>
+</footer>
 
 </body>
 </html>
